@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel='stylesheet' type='text/css' href='./index.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css" integrity="sha256-G3IAYJYIQvZgPksNQDbjvxd/Ca1SfCDFwu2s2lt0oGo=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div id="scene_text_dropdown" class="dropdown">
+        	You are in a   
+            <label id="scene" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Gray Room
+            </label>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Gray Room</a>
+                <a class="dropdown-item" href="#">White Room</a>
+                <a class="dropdown-item" href="#">Blue Room</a>
+            </div>
+        </div>
+    </nav>
+    <section id='blind-section'>
+        <div>
+            <div class="row">
+                <div class="col-md-6" align='center'>
+                    <div id='window-grid'>
+                        <img src="./assets/block1.png">
+                        <img src="./assets/block2.png" class='horizontal-resizable'>
+                        <img src="./assets/block3.png">
+                        <img src="./assets/block4.png" class='vertical-resizable'>
+                        <img src="./assets/block5.png" class='vertical-resizable horizontal-resizable'>
+                        <img src="./assets/block6.png" class='vertical-resizable'>
+                        <img src="./assets/block7.png">
+                        <img src="./assets/block8.png" class='horizontal-resizable'>
+                        <img src="./assets/block9.png">
+                        <!--                         <img src="./assets/window-top.png">
+                        <div class="video-container">
+                            <video src="https://traversymedia.com/downloads/video.mov" autoplay muted loop></video>
+                        </div>
+                        <img src="./assets/window-bottom.png"> -->
+                    </div>
+                    <!--                     <input id="ex4" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="50" data-slider-orientation="vertical" /> -->
+                </div>
+                <div class="col-md text_color" align='left'>
+                    <section id='title_block'>
+                        <h1> Automated custom blinds. <br /> Dress your window today. </h1>
+                    </section>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <label>Name</label>
+                            <div class="input-group">
+                                <input type="text" placeholder="  eg: Bedroom 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label>Width</label>
+                            <div class="input-group">
+                                <input id='width_inches_input' type="text" placeholder="  eg: 48.75">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">inches</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label>Height</label>
+                            <div class="input-group">
+                                <input id='height_inches_input' type="text" placeholder="  eg: 60.75">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">inches</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div id='color_pick'>
+                                <label>Color:</label>
+                                <div>
+                                    <button class='round_button' value='gray' style='background-color: grey'></button>
+                                    <button class='round_button' value='beige' style='background-color: #e1c699'></button>
+                                    <button class='round_button' value='white' style='background-color: white'></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id='color_pick'>
+                                <div>
+                                    <label>Light Filter Percentage:</label>
+                                    <div>
+                                        <button class='round_button' style='background-color: rgba(0,0,0,0.5)'>50%</button>
+                                        <button class='round_button' style='background-color: rgba(0,0,0, 1)'>100%</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
